@@ -1,0 +1,61 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-content: space-between;
+  margin: 15% 10% 0 10%;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.profileImg {
+  width: 50%;
+  height: auto;
+  z-index: 1;
+}
+
+.roleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10% 0 5% 0;
+  padding: 5% 0 5% 0;
+}
+
+.item:hover {
+  background: linear-gradient(90deg,
+      var(--color-primary) 30%,
+      rgba(255, 255, 255, 0) 100%);
+  border-radius: 20px;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    align-items: center;
+  }
+
+  .profileImg {
+    display: none;
+  }
+
+  .item {
+    margin: 0 0 0 0;
+  }
+}
